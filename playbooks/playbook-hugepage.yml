@@ -1,0 +1,8 @@
+---
+- hosts: amlReplicaSet,opsManager
+  remote_user: ec2-user
+  tasks:
+  - name: disable hugepage support
+    shell: /bin/echo never | /usr/bin/sudo /usr/bin/tee /sys/kernel/mm/transparent_hugepage/enabled 
+  - name: disable hugepage defrag
+    shell: /bin/echo never | /usr/bin/sudo /usr/bin/tee /sys/kernel/mm/transparent_hugepage/defrag
