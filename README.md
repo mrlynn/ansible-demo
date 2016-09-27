@@ -19,6 +19,11 @@ Each step in the demo is carried out by leveraging a corresponding script.  The 
 
 To begin the demo execute 1_ansible-cfg.sh, then 2_ansible-ping.sh, etc.
 
+## Prerequisites
+
+- Install Ansible - See [Ansible](https://github.com/ansible/ansible)
+- Modify files/ansible-hosts to reference your own set of hosts
+
 ## Tests
 
 None yet.
