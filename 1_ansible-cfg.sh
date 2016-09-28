@@ -4,7 +4,8 @@ green=`tput setaf 2`
 yellow=`tput setaf 3`
 reset=`tput sgr0`
 echo `clear`
-echo "$ cat ansible.cfg${yellow}"
+echo "${red}Ansible${reset} uses a central configuration file.  Let's take a look at the one we're using:${green}"
+echo "$ cat ansible.cfg"
 cat ansible.cfg
 echo ${reset}
 echo Notice the following line:
