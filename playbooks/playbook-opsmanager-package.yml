@@ -1,0 +1,11 @@
+---
+- hosts: opsManager
+  remote_user: ec2-user
+  become: yes
+  vars:
+    opsmanagerGPG: mongodb-mms-2.0.6.363-1.x86_64.rpm.gpg
+    opsmanager: mongodb-mms-2.0.6.363-1.x86_64.rpm
+  tasks:
+  - get_url: url=https://downloads.mongodb.com/on-prem-mms/rpm/mongodb-mms-2.0.6.363-1.x86_64.rpm dest=/home/ec2-user/{{opsmanager}}
+  - yum: name=/home/ec2-user/{{opsmanager}} state=present
+  - service: name=mongodb-mms state=started

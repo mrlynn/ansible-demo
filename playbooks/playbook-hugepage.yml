@@ -1,5 +1,5 @@
 ---
-- hosts: database
+- hosts: amlReplicaSet,opsManager
   remote_user: ec2-user
   tasks:
   - name: disable hugepage support

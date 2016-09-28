@@ -1,0 +1,37 @@
+sample:
+  read: 0
+  write: 0
+  readDelay: 10
+  writeStop: 20
+  exhaustCursor: false
+
+hourly:
+  read: 0
+  write: 0
+  readDelay: 10
+  writeStop: 20
+  exhaustCursor: true
+  collision: false
+
+daily:
+  read: 100
+  write: 500
+  readDelay: 10
+  writeStop: 120
+  exhaustCursor: false
+  collision: false
+
+writeConcern:
+  majority: true
+  journal: true
+readConcernMajority: false
+secondary: false
+duration: 120
+seed: ip-172-31-27-134.eu-central-1.compute.internal:27000,ip-172-31-27-135.eu-central-1.compute.internal:27000,ip-172-31-27-136.eu-central-1.compute.internal:27000
+database: timeSeries
+days: 15
+servers: 500
+drop: false
+createIndex: true # create basic indexes after drop?
+#description: "secondary load"
+description: "w:majority / j:true / rc enabled / 500 writers, 100 readers, loaded secondary"

@@ -1,0 +1,32 @@
+---
+- name: create ec2 instances
+  hosts: localhost
+  connection: local
+  gather_facts: false 
+  vars:
+    region: us-east-1
+    key: michael.lynn
+    tagsWeb: '{"owner": "michael.lynn", "project": "Web Server", "expire-on": "2016-12-01", "Name": "mlynn-webserver"}'
+    securityGroupsWeb: '["mlynn-default"]'
+    ami: "ami-6869aa05"
+    count: 1 
+  tasks:
+  - name: Deploy Web Server Instance
+    ec2:
+      key_name: "{{ key }}"
+      instance_type: t2.micro
+      image: "{{ ami }}"
+      wait: yes
+      group: "{{ securityGroupsWeb }}"
+      count: "{{ count }}"
+      region: "{{ region }}"
+      instance_tags: "{{ tagsWeb }}"
+    register: webserver
+  - name: Create and attach volume to replica set instances
+    ec2_vol:
+      instance: "{{ item.id }}"
+      volume_size: 20  
+      volume_type: gp2
+      device_name: /dev/sdb
+      region: "{{ region }}"
+    with_items: "{{ webserver.instances }}"
