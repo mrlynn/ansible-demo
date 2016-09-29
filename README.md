@@ -25,15 +25,14 @@ git clone https://github.com/mrlynn/ansible-demo.git
 
 Each step in the demo is carried out by leveraging a corresponding script.  The scripts are listed here:
 
-1_ansible-cfg.sh
-2_ansible-hosts.sh
-
-3_ansible-ping.sh
-4_ansible-hosts.sh
-5_ansible-script.sh
-6_ansible_playbooks.sh
-7_overall_process.sh
-8_overall_process-script.sh
+- 1_ansible-cfg.sh
+- 2_ansible-hosts.sh
+- 3_ansible-ping.sh
+- 4_ansible-hosts.sh
+- 5_ansible-script.sh
+- 6_ansible_playbooks.sh
+- 7_overall_process.sh
+- 8_overall_process-script.sh
 
 These scripts are designed to call the next strip in the sequence as the very last step.  To begin, simply execute the first script in the series.
 
