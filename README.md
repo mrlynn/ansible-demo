@@ -24,6 +24,11 @@ To begin the demo execute 1_ansible-cfg.sh, then 2_ansible-ping.sh, etc.
 - Install Ansible - See [Ansible](https://github.com/ansible/ansible)
 - Modify files/ansible-hosts to reference your own set of hosts
 
+## Demo Preview Images
+
+- ![Alt text](/images/1-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #1")
+- ![Alt text](/images/2-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #2")
+
 ## Tests
 
 None yet.
