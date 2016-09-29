@@ -44,37 +44,37 @@ These scripts are designed to call the next strip in the sequence as the very la
 
 ## Slide Deck from Demo
 
-![NYMUG Slides 10-06-2016](/slides/Ansible-Ops-Manager.pdf "Ansible Ops Manager Demo Slides")
+[NYMUG Slides 10-06-2016](/slides/Ansible-Ops-Manager.pdf)
 
 ## Demo Preview Images
 
 ### Ansible Configuration
 
-![Alt text](/images/1-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #1")
+![Ansible Configuration](/images/1-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #1")
 
 ### Ansible Host File
 
-![Alt text](/images/2-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #2")
+![Ansible Host File](/images/2-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #2")
 
 ### Ansible Modules - Ping
 
-![Alt text](/images/3-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #3")
+![Ansible Modules](/images/3-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #3")
 
 ### Ansible Environment Variables
 
-![Alt text](/images/4-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #4")
+![Ansible Environment Variables](/images/4-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #4")
 
 ### Ansible Modules - Script
 
-![Alt text](/images/5-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #5")
+![Ansible Modules - Script](/images/5-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #5")
 
 ### Ansible Playbooks
 
-![Alt text](/images/6-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #6")
+![Ansible Playbooks](/images/6-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #6")
 
 ### Orchestrating multple playbooks
 
-![Alt text](/images/7-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #7")
+![Ops Manager Deployment Process Overview](/images/7-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #7")
 
 ## Tests
 
