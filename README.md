@@ -12,7 +12,7 @@ This process is something that is covered completely by the alternative MongoDB 
 
 *Ops Manager*, however, leaves installation and configuration of the Automation Agents up to you - assuming you are leveraging something like *Ansible*, Chef, Puppet, Salt or similar.
 
-These scripts assume you want to leverage *Ops Manager* rather than *Cloud Manager* or *Atlas*.  If you need more information on these offerings, please see [MongoDB Atlas](http://www.mongodb.com/Atlas/).
+These scripts assume you want to leverage *Ops Manager* rather than *Cloud Manager* or *Atlas*.  If you need more information on these offerings, please see [MongoDB Atlas and Cloud Manager](http://www.mongodb.com/cloud/).
 
 ## Installation
 
