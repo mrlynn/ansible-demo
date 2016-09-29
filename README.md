@@ -2,6 +2,8 @@
 
 This is a set of scripts written to conduct a fairly basic introduction to **ansible** and **ansible-playbook**. This was created for execution at the [NY MongoDB User Group](http://www.meetup.com/New-York-MongoDB-User-Group/).
 
+It should be noted that the original *Ansible* scripts and playbooks were authored by Torsten Spindler of MongoDB.
+
 ## Motivation
 
 This was created to simplify the process of walking through a basic demo of ansible.  The goal of the ansible scripts we set up and execute herein is to integration with deployment of a MongoDB Ops Manager Cluster.
@@ -39,6 +41,10 @@ These scripts are designed to call the next strip in the sequence as the very la
 - Install Ansible - See [Ansible](https://github.com/ansible/ansible)
 - Optionally install pv to enable keyboard typing emulation as the scripts execute.
 - Modify files/ansible-hosts to reference your own set of hosts
+
+## Slide Deck from Demo
+
+![NYMUG Slides 10-06-2016](/slides/Ansible-Ops-Manager.pdf "Ansible Ops Manager Demo Slides")
 
 ## Demo Preview Images
 
