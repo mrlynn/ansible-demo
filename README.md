@@ -58,6 +58,13 @@ To begin the demo execute 1_ansible-cfg.sh, then 2_ansible-ping.sh, etc.
 
 None yet.
 
+## Frequently Asked Questions
+
+1. How does *Ansible* work?
+ - It depends on what you mean by work... but usually people as this question around carrying out execution of remote tasks.  *Ansible* leverages ssh connectivity and private keys.  You should examine the ansible.cfg file for the private_key_file setting.
+
+ - Once the key file has been set, *Ansible* leverages Modules which are predefined scripts which are configured to act against specific functions - Like ping, for example.
+
 ## Contributors
 
 [Mike lynn](mailto:merlynn@gmail.com)
