@@ -1,3 +1,4 @@
+![Pain Relief](/images/ops-ans-medicine.png "Ops Manager Pain Relief with Ansible")
 ## Synopsis
 
 This is a set of scripts written to conduct a fairly basic introduction to **ansible** and **ansible-playbook**. This was created for execution at the [NY MongoDB User Group](http://www.meetup.com/New-York-MongoDB-User-Group/).
