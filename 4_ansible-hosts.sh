@@ -1,20 +1,22 @@
 #!/bin/sh
 source functions.sh
 echo `clear`
-echo "${yellow}Let's save some typing by using one of ${red}ansible${green}'s many env configurations.${reset}"
+title "4 - ${red}Ansible${reset} environment variables"
+echo "Let's save some typing by using one of ${red}ansible${green}'s many env configurations.${reset}"
 echo 
-echo "${green}$ \c"
-typeit "export env ANSIBLE_HOSTS=./ansible-hosts"
+typeit "export env ANSIBLE_HOSTS=./ansible-hosts\n"
 export env ANSIBLE_HOSTS=./ansible-hosts
-echo ${reset}${yellow}
+echo ${reset}
 echo "Going forward I can skip using the ${green}-i ansible-hosts${yellow} flag and argument."
 echo 
-echo "We can do the same for ANSIBLE_CONFIG"
+echo "We can do the same for ${yellow}ANSIBLE_CONFIG${reset}"
 echo
 echo "export ANSIBLE_CONFIG=./ansible.cfg"
 echo "So here's an example:"
 echo 
-echo "${green}$ \c"
+pause
 typeit "ansible -m ping all"
 ansible -m ping all
 echo ${reset}
+pause
+./5_ansible-script.sh
