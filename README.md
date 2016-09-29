@@ -30,6 +30,10 @@ These scripts assume you want to leverage *Ops Manager* rather than *Cloud Manag
 
 git clone https://github.com/mrlynn/ansible-demo.git
 
+## Demo Setup
+
+- See [Setup](/setup/)
+
 ## Demo execution
 
 Each step in the demo is carried out by leveraging a corresponding script.  The scripts are listed here:
