@@ -1,12 +1,21 @@
 ![Pain Relief](/images/ops-ans-medicine.png "Ops Manager Pain Relief with Ansible")
 ## Synopsis
 
-This is a set of scripts written to conduct a fairly basic introduction to **ansible** and **ansible-playbook**. This was created for execution at the [NY MongoDB User Group](http://www.meetup.com/New-York-MongoDB-User-Group/).
+*MongoDB* Cloud Manager, Atlas and Ops Manager are game changing solutions to help you manage your MongoDB estate.
 
-It should be noted that the original *Ansible* scripts and playbooks were authored by Torsten Spindler of MongoDB.
+However, there are differences between Ops Manager, which is an _on premise_ solution and the *Cloud Manager* and *Atlas* solutions.  Mainly in the fact that with *Ops Manager* you are expected to have some solution in place to help you deploy hosts and to help you install the Ops Manager Automation Agent - which enables you to manage the MongoDB nodes.
+
+This repository is intended to accomplish 2 main goals:
+
+1. Present a very gently/basic introduction to RedHat Ansible.
+
+2. Present a possible automated solution to help you deploy and onboard into Ops Manager a MongoDB Cluster using Ansible.
 
 ## Motivation
 
+This is a set of scripts written to conduct a fairly basic introduction to **ansible** and **ansible-playbook**. This was created for execution at the [NY MongoDB User Group](http://www.meetup.com/New-York-MongoDB-User-Group/).
+
+It should be noted that the original *Ansible* scripts and playbooks were authored by Torsten Spindler of MongoDB.
 This was created to simplify the process of walking through a basic demo of ansible.  The goal of the ansible scripts we set up and execute herein is to integration with deployment of a MongoDB Ops Manager Cluster.
 
 These scripts are designed to deploy the MongoDB Software on the Ops Manager node and the MongoDB ReplicaSet members; then, configure the replica set members automation agent to talk to your Ops Manager host.
