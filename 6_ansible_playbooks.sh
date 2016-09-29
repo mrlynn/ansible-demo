@@ -24,7 +24,7 @@ echo "Let's run it"
 pause
 echo ${green}
 typeit "ansible-playbook playbooks/playbook-hugepage.yml" 
-ansible-playbook playbooks/playbook-hugepage.yml 
+ansible-playbook -i files/ansible-hosts-script playbooks/playbook-hugepage.yml 
 echo ${reset}
 pause
 ./7_overall_process.sh

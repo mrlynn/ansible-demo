@@ -7,7 +7,7 @@ echo "Setting up a ${green}MongoDB${reset} cluster with ${green}Ops Manager${res
 echo "An ${red}ansible${reset} inventory in ./ansible-hosts is expected"
 echo "The hosts you intend to use for your cluster should already be up and running."
 echo "The ${green}Ops Manager${reset} instance must be in group [opsManager]"
-echo "The replica set instances must be in group [amlReplicaSet]"
+echo "The replica set instances must be in group [ReplicaSet]"
 echo "ensure you are using the right private keyfile in ansible.cfg"
 
 echo

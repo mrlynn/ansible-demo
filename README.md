@@ -42,6 +42,18 @@ To begin the demo execute 1_ansible-cfg.sh, then 2_ansible-ping.sh, etc.
 
 ![Alt text](/images/4-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #4")
 
+### Ansible Modules - Script
+
+![Alt text](/images/5-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #5")
+
+### Ansible Playbooks
+
+![Alt text](/images/6-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #6")
+
+### Orchestrating multple playbooks
+
+![Alt text](/images/7-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #7")
+
 ## Tests
 
 None yet.

@@ -1,0 +1,5 @@
+[OpsManager]
+ec2-54-211-152-6.compute-1.amazonaws.com ansible_user=ec2-user
+[ReplicaSet]
+ec2-52-207-218-19.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-54-152-92-4.compute-1.amazonaws.com ansible_user=ec2-user
