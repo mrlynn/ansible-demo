@@ -53,4 +53,7 @@ So - You'll want to deploy one M3.xlarge for your Ops Manager machine and 3 t2.s
           +---------------------------------+------------------------+
 
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8bec1e16c15c77dbed7c4ebb6c6fc4165ccd134b
