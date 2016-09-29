@@ -7,7 +7,7 @@ However, there are differences between Ops Manager, which is an _on premise_ sol
 
 This repository is intended to accomplish 2 main goals:
 
-1. Present a very gently/basic introduction to RedHat Ansible.
+1. Present a very gentle/basic introduction to RedHat Ansible.
 
 2. Present a possible automated solution to help you deploy and onboard into Ops Manager a MongoDB Cluster using Ansible.
 
