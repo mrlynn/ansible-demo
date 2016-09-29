@@ -26,9 +26,13 @@ To begin the demo execute 1_ansible-cfg.sh, then 2_ansible-ping.sh, etc.
 
 ## Demo Preview Images
 
+### Ansible Configuration
 - ![Alt text](/images/1-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #1")
+### Ansible Host File
 - ![Alt text](/images/2-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #2")
+### Ansible Modules - Ping
 - ![Alt text](/images/3-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #3")
+### Ansible Environment Variables
 - ![Alt text](/images/4-ansible-demo.gif?raw=true "Ansible Demo Walkthrough #4")
 
 ## Tests
