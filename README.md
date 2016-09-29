@@ -5,9 +5,11 @@
 
 However, there are differences between Ops Manager, which is an _on premise_ solution and the *Cloud Manager* and *Atlas* solutions.  Mainly in the fact that with *Ops Manager* you are expected to have some solution in place to help you deploy hosts and to help you install the Ops Manager Automation Agent - which enables you to manage the MongoDB nodes.
 
+RedHat *Ansible* is just such an automation tool.  It can automate the package deployment, configuration and even the node deployment if you're using a cloud provider such as AWS.
+
 This repository is intended to accomplish 2 main goals:
 
-1. Present a very gentle/basic introduction to RedHat Ansible.
+1. Present a very gentle/basic introduction to RedHat **Ansible**.
 
 2. Present a possible automated solution to help you deploy and onboard into Ops Manager a MongoDB Cluster using Ansible.
 
