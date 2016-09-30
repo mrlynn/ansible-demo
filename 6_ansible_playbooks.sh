@@ -1,5 +1,6 @@
 #!/bin/sh
 source functions.sh
+export ANSIBLE_HOSTS=./ansible-hosts
 echo `clear`
 title "6 - ${red}Ansible${reset} Playbooks"
 echo "${reset}"
@@ -24,7 +25,7 @@ echo "Let's run it"
 pause
 echo ${green}
 typeit "ansible-playbook playbooks/playbook-hugepage.yml" 
-ansible-playbook -i files/ansible-hosts-script playbooks/playbook-hugepage.yml 
+ansible-playbook -i ansible-hosts playbooks/playbook-hugepage.yml 
 echo ${reset}
 pause
 ./7_overall_process.sh

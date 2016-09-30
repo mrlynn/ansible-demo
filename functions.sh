@@ -6,8 +6,8 @@ yellow=`tput setaf 3`
 blue=`tput setaf 4`
 reset=`tput sgr0`
 printf -v stars '%*s' 80 ''
-export ANSIBLE_HOSTS=./ansible-hosts
-export ANSIBLE_CONFIG=./ansible.cfg
+export ANSIBLE_HOSTS=ansible-hosts
+export ANSIBLE_CONFIG=ansible.cfg
 dir=`basename $PWD`
 hn=`hostname -s`
 un=`whoami`
@@ -27,4 +27,14 @@ function title {
     echo "${stars// /*}"
     echo "$1"
     echo "${stars// /*}"
+}
+function prompt {
+	while true; do
+		read -n1 -rsp "[C]ontinue, [Q]uit: " ans
+		case $ans in
+			[Cc]* ) return 0;;
+			[Qq]* ) exit;;
+			* ) echo "Please enter C to Continue or Q to Quit";;
+		esac
+	done
 }

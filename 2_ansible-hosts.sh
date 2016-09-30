@@ -10,5 +10,6 @@ echo ${green}
 cat -n ansible-hosts
 echo ${reset}
 echo
+echo "At this time, you may wish to open your EC2 Console to show these hosts."
 pause
 ./3_ansible-ping.sh

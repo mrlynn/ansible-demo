@@ -1,5 +1,11 @@
-[database]
-ec2-54-211-152-6.compute-1.amazonaws.com ansible_user=ec2-user
-[web]
-ec2-52-207-218-19.compute-1.amazonaws.com ansible_user=ec2-user
-ec2-54-152-92-4.compute-1.amazonaws.com ansible_user=ec2-user
+[opsManager]
+ec2-54-162-176-239.compute-1.amazonaws.com ansible_user=ec2-user
+
+[ReplicaSet]
+ec2-52-87-236-114.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-54-162-15-208.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-52-90-5-91.compute-1.amazonaws.com ansible_user=ec2-user
+
+[ReplicaSet:vars]
+opsmanagerurl=http://ec2-54-162-176-239.compute-1.amazonaws.com:8080
+opsmanager=ec2-54-162-176-239.compute-1.amazonaws.com

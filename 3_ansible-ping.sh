@@ -10,5 +10,7 @@ echo "The flag and argument ${red}-m ping${reset} specifies that we want to invo
 echo 
 echo "The ${red}ping${reset} module simply tests connectivity to a set of hosts"
 echo "In this case - we're telling ping to use the ${green}all${reset} group of hosts."
+echo
+echo "For more information on all of the available modules, see http://docs.ansible.com/modules_by_category.html"
 pause
 ./4_ansible-hosts.sh

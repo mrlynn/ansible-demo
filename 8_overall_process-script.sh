@@ -18,32 +18,26 @@ echo "ansible -i ${inventory} all -m ping\n"
 pause
 ansible -i ${inventory} all -m ping
 
-echo "${stars// /*}"
-echo "Step 2 - Disabling hugepage support, adding XFS volume"
-echo "${stars// /*}"
-echo "ansible-playbook -i ${inventory} playbooks/playbook-hugepage.yml"
-pause
-ansible-playbook -i ${inventory} playbooks/playbook-hugepage.yml
-ansible-playbook -i ${inventory} playbooks/playbook-dataXfs.yml
+title "Do you wish to install an Ops Manager Server?"
+read -n1 -rsp "[Y]es - Install Ops Manager Package, [N]o, Already have it running and configured" ans
+if [[ "$ans" =~ ^[Yy] ]]; then
+    title "Step 3 - Installing ${green}Ops Manager${reset} - Prerequisites"
+    typeit "ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-prerequisites.yml"
+    pause
+    ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-prerequisites.yml
+    echo "${stars// /*}"
+    echo "Step 4 - Install ${green}Ops Manager${reset} MongoDB Server"
+    pause
+    ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-mongods.yml
+    echo "${stars// /*}"
+    echo "Step 5 - Install ${green}Ops Manager${reset} Package"
+    echo "${stars// /*}"
+    pause
+    ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-package.yml
 
-echo "${stars// /*}"
-echo "Step 3 - Installing ${green}Ops Manager${reset} - Prerequisites"
-echo "${stars// /*}"
-echo "ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-prerequisites.yml"
-pause
-ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-prerequisites.yml
-echo "${stars// /*}"
-echo "Step 4 - Install ${green}Ops Manager${reset} MongoDB Server"
-pause
-ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-mongods.yml
-echo "${stars// /*}"
-echo "Step 5 - Install ${green}Ops Manager${reset} Package"
-echo "${stars// /*}"
-pause
-ansible-playbook -i ${inventory} playbooks/playbook-opsmanager-package.yml
-
-echo "Now open a browser and configure your ${green}Ops Manager${reset} "
-echo "Come back here when you've finished "
+    echo "Now open a browser and configure your ${green}Ops Manager${reset} "
+    echo "Come back here when you've finished "
+fi
 echo
 pause
 echo "${stars// /*}"
