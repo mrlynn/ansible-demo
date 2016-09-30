@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  tasks:
+  - homebrew: name=pv state=present
