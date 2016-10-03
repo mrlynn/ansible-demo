@@ -2,6 +2,9 @@
 source functions.sh
 echo `clear`
 title "3 - ${red}Ansible${reset} Modules: Ping"
+echo "${red}Ansible${reset} has many predefined automation components called ${bold}Modules${reset}.  ${bold}Modules${reset} are written to perform specific actions against hosts.  Take the example ${bold}Ping${reset}.  This is a basic module that simply tests connectivity to a given group (or all) of the servers in your inventory.\n"
+echo "Let's look at an example:"
+pause
 typeit "ansible -m ping -i ansible-hosts all"
 echo ${green}
 ansible -m ping -i ansible-hosts all
