@@ -9,7 +9,7 @@ typeit "cat test.sh"
 echo ${green}
 cat -n files/test.sh
 echo ${yellow}
-echo "Now, to execute this on remote hosts, we can simple invoke it as a module:${green}"
+echo "Now, to execute this on remote hosts, we can simple invoke it as part of a module:${green}"
 pause
 typeit "${green}ansible -m script -a files/test.sh all"
 echo ${green}
