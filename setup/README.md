@@ -53,3 +53,22 @@ So - You'll want to deploy one M3.xlarge for your Ops Manager machine and 3 t2.s
           +---------------------------------+------------------------+
 
 ```
+
+### Ansible Hosts File
+
+Once you have your hosts that you want to demonstrate connectivity and automation with **Ansible**, you need to create your ```ansible-hosts``` file.  Here's and example:
+
+```
+[opsManager]
+ec2-54-162-176-239.compute-1.amazonaws.com ansible_user=ec2-user
+
+[ReplicaSet]
+ec2-54-173-174-232.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-54-173-133-164.compute-1.amazonaws.com ansible_user=ec2-user
+ec2-54-159-152-50.compute-1.amazonaws.com ansible_user=ec2-user
+
+[ReplicaSet:vars]
+opsmanagerurl=http://ec2-54-162-176-239.compute-1.amazonaws.com:8080
+opsmanager=ec2-54-162-176-239.compute-1.amazonaws.com
+```
+Notice that there's One OpsManager host and Three ReplicaSet hosts.  
