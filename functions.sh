@@ -20,7 +20,7 @@ function typeit {
   [ $USEPV -eq 1 ] && echo $1 | pv -qL $SPEED || echo $1
 }
 pause(){
-     read -n1 -rsp $'Press any key to continue or Ctrl+C to exit'
+     read -n1 -rsp $"${blue}Press any key to continue or Ctrl+C to exit${reset}"
      echo
 }
 function title {
