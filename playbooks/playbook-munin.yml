@@ -5,7 +5,7 @@
   become: true
   tasks:
   - yum: name=munin-node state=present
-  - service: name=munin-node state=started enabled=yes
+  - service: name=munin-node state=restarted enabled=yes
   - file:
      src: /usr/share/munin/plugins/iostat
      dest: /etc/munin/plugins/iostat
@@ -15,5 +15,6 @@
      dest: /etc/munin/plugins/iostat_ios
      state: link
   - copy: src=../files/munin-node dest=/etc/munin/plugin-conf.d/munin-node owner=munin group=munin mode="u=rw,g=rw,o=r" backup=yes
+  - copy: src=../files/munin-node.conf dest=/etc/munin/munin-node.conf 
 
 
