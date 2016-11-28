@@ -14,7 +14,7 @@
   remote_user: ec2-user
   become: yes
   vars:
-    autoagent: mongodb-mms-automation-agent-manager-2.5.20.1755-1.x86_64.rpm
+    autoagent: mongodb-mms-automation-agent-manager-latest.x86_64.rpm
   tasks:
   - name: download automation agent
     get_url: url="{{opsmanagerurl}}/download/agent/automation/{{autoagent}}" dest="/home/ec2-user/{{autoagent}}"

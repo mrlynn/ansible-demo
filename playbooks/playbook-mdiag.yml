@@ -1,0 +1,16 @@
+---
+- name: Set up temporary directory on localhost in /tmp/mdiag-outputs/
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Creating temporary directory
+      file: path=/tmp/mdiag-outputs state=directory mode=0755
+    - set_fact: var_mdiagDir="/tmp/mdiag-outputs"
+- name: mdiag 
+  hosts: all
+  become: yes
+  tasks: 
+  - name: copy and run mdiag.sh script on hosts
+    script: files/mdiag.sh
+  - name: collect mdiag.sh output
+    synchronize: src=/tmp/mdiag-*.json dest={{ hostvars["localhost"]["var_mdiagDir"]}}/{{ ansible_hostname }}/ mode=pull
