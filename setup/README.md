@@ -30,6 +30,7 @@ Ansible automates the process of package deployment, configuration as well as no
 To speed things up - I'll leave you to work out those details as we'll not have time to leverage the EC2 Automation for this demo.
 
 So - You'll want to deploy one M3.xlarge for your Ops Manager machine and 3 t2.small's.  Here's our architecture:
+
 ```
 +----------------+                               +---------------+
 |                |                               | (t2.small)    |
@@ -54,6 +55,12 @@ So - You'll want to deploy one M3.xlarge for your Ops Manager machine and 3 t2.s
 
 ```
 
+### Deploying Nodes to AWS/EC2
+
+The first thing we'll need to accomplish is getting our Ops Manager node deployed.  Since the application requirements are pretty decent, we'll leverage an M3 Instance.  Here's what that looks like in terms of resource:
+
+
+
 ### Ansible Hosts File
 
 Once you have your hosts that you want to demonstrate connectivity and automation with **Ansible**, you need to create your ```ansible-hosts``` file.  Here's and example:
@@ -71,4 +78,4 @@ ec2-54-159-152-50.compute-1.amazonaws.com ansible_user=ec2-user
 opsmanagerurl=http://ec2-54-162-176-239.compute-1.amazonaws.com:8080
 opsmanager=ec2-54-162-176-239.compute-1.amazonaws.com
 ```
-Notice that there's One OpsManager host and Three ReplicaSet hosts.  
+Notice that there's One OpsManager host and Three ReplicaSet hosts.  You'll need to put the FQDN's of your OpsManager and ReplicaSet members instead of mine. 

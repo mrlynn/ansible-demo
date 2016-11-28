@@ -1,0 +1,37 @@
+sample:
+  read: 0
+  write: 0
+  readDelay: 10
+  writeStop: 20
+  exhaustCursor: false
+
+hourly:
+  read: 0
+  write: 0
+  readDelay: 10
+  writeStop: 20
+  exhaustCursor: true
+  collision: false
+
+daily:
+  read: 100
+  write: 500
+  readDelay: 10
+  writeStop: 120
+  exhaustCursor: false
+  collision: false
+
+writeConcern:
+  majority: true
+  journal: true
+readConcernMajority: false
+secondary: false
+duration: 120
+seed: ec2-54-174-107-51.compute-1.amazonaws.com, ec2-54-175-148-234.compute-1.amazonaws.com, ec2-54-173-59-7.compute-1.amazonaws.com
+database: timeSeries
+days: 15
+servers: 500
+drop: false
+createIndex: true # create basic indexes after drop?
+#description: "secondary load"
+description: "w:majority / j:true / rc enabled / 500 writers, 100 readers, loaded secondary"

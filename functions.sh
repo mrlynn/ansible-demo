@@ -14,7 +14,7 @@ un=`whoami`
 export PROMPT="${green}${hn}:${dir} ${un}$ ${reset}"
 USEPV=1
 echo "t" | pv -qL 10 > /dev/null 2>&1 || USEPV=0
-SPEED=15
+SPEED=10
 function typeit {
   echo "${PROMPT}$ \c"
   [ $USEPV -eq 1 ] && echo $1 | pv -qL $SPEED || echo $1
