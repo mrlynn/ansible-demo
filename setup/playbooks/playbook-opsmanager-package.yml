@@ -3,8 +3,8 @@
   remote_user: ec2-user
   become: yes
   vars:
-    opsmanagerGPG: mongodb-mms-2.0.7.372-1.x86_64.rpm.gpg
-    opsmanager: mongodb-mms-2.0.7.372-1.x86_64.rpm
+    opsmanagerGPG: mongodb-mms-3.4.0.383-1.x86_64.rpm.gpg
+    opsmanager: mongodb-mms-3.4.0.383-1.x86_64.rpm
   tasks:
   - get_url: url=https://s3.eu-central-1.amazonaws.com/torstenspindler/{{opsmanagerGPG}} dest=/home/ec2-user/{{opsmanagerGPG}}
   - shell: echo 1234 | gpg --batch --passphrase-fd 0 {{opsmanagerGPG}}

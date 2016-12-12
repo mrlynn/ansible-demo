@@ -9,6 +9,7 @@
   - yum: name=mongodb-org-shell state=latest
   - yum: name=gpg state=latest
   - file: path=/data state=directory mode=0755 owner=mongod group=mongod
+  - file: path=/data/HEAD state=directory mode=0755 owner=mongodb-mms group=mongodb-mms
   - file: path=/data/appdb state=directory mode=0755 owner=mongod group=mongod
   - file: path=/data/backup state=directory mode=0755 owner=mongod group=mongod
   - file: path=/data/backupDaemon state=directory mode=0755 owner=mongodb-mms group=mongodb-mms

@@ -1,0 +1,4 @@
+mongodump -h rs1primary -d timeSeries -o ./dump
+
+mongorestore --drop -h rs1primary -d timeSeries ./dump
+

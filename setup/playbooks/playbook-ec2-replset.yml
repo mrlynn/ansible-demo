@@ -6,7 +6,7 @@
   vars:
     region: us-east-1
     key: michael.lynn
-    tagsReplSet: '{"owner": "michael.lynn", "project": "Ops Manager Ansible", "expire-on": "2016-12-01", "Name": "mlynn-ansible-repset"}'
+    tagsReplSet: '{"owner": "michael.lynn", "project": "Ops Manager Ansible", "expire-on": "2017-05-01", "Name": "mlynn-ansible-repset"}'
     securityGroupsReplSet: '["mlynn-default"]'
     ami: "ami-6869aa05"
     replSetSize: 3
