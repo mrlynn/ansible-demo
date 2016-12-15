@@ -19,6 +19,12 @@ This directory contains details and instructions to help you get set up to run t
  - Modify the ansible.cfg file in the top level directory of this repo with the location of your key file.
   - private_key_file = /Users/mlynn/.ssh/michael.lynn.pem
 
+3. BOTO
+
+This solution leverages the boto library for python for the creation of the ansible-hosts file from the AWS inventory.  To install boto - use the following command:
+
+```pip install boto3```
+
 ## Getting Setup
 
 Once you have the prereqs squared away, you're ready to begin either getting your nodes deployed for demo, or if you already have nodes deployed, you can skip this next section.
