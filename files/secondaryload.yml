@@ -27,7 +27,7 @@ writeConcern:
 readConcernMajority: false
 secondary: false
 duration: 120
-seed: ec2-54-88-225-29.compute-1.amazonaws.com:27018
+seed: ec2-54-144-165-173.compute-1.amazonaws.com, ec2-54-89-80-8.compute-1.amazonaws.com, ec2-52-71-104-176.compute-1.amazonaws.com
 database: timeSeries
 days: 15
 servers: 500

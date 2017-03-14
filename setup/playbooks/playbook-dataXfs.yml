@@ -1,0 +1,8 @@
+---
+- hosts: opsManager,ReplicaSet
+  remote_user: ec2-user
+  become: yes
+  tasks:
+  - yum: name=xfsprogs state=present
+  - shell: mkfs.xfs /dev/sdb
+  - mount: name=/data src=/dev/sdb fstype=xfs opts=defaults,noatime state=mounted
