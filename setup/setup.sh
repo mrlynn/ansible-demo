@@ -5,7 +5,6 @@ export ANSIBLE_CONFIG=./ansible.cfg
 export ANSIBLE_HOSTS=./ansible-hosts
 
 source ../functions.sh
-inventory="ansible-hosts"
 
 title "Deploy an EC2 Instance for Ops Manager"
 echo "Ensure you are using the right private keyfile in ansible.cfg"
