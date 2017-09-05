@@ -25,6 +25,32 @@ This solution leverages the boto library for python for the creation of the ansi
 
 ```pip install boto3```
 
+4. Put your AWS Keys in place - ~/.aws/credentials:
+
+```sh
+[default]
+aws_access_key_id = IOEPXX2LODTX4PGGZNJQ
+aws_secret_access_key = $DAKS)f94la00s901eBLbAh+7KjFoVZ
+```
+
+5. Create your ansible.cfg file (from the example):
+
+```sh
+cp ansible.cfg.example ansible.cfg
+```
+
+6. Replace the name of your AWS Key in the ansible.cfg file:
+```
+[defaults]
+host_key_checking = False
+nocows=1
+private_key_file = /Users/mlynn/.ssh/michael.lynn.pem <----Location of your key
+log_path=logs/ansible.log
+
+[ssh_connection]
+control_path = %(directory)s/%%C
+```
+
 ## Getting Setup
 
 Once you have the prereqs squared away, you're ready to begin either getting your nodes deployed for demo, or if you already have nodes deployed, you can skip this next section.

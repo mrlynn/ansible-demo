@@ -1,5 +1,7 @@
 *.retry
 *.save
 *.pem
+ansible.cfg
+ansible-hosts
 
 
